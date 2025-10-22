@@ -42,18 +42,23 @@
         </ul>
       </nav>
     </header>
-    <section class="connection">
+    <!-- connexion -->
+    <section class="connexion">
       <h2>Connexion page</h2>
       <div class="form-connexion">
         <img src="img/connect.jpg" alt="photo de connexion" />
         <form>
-          <label for="email">Email</label>
-          <input type="email" placeholder="Email" required />
-          <label for="password">Password</label>
-          <input type="password" placeholder="Password" required />
+          <div class="form-input_grid">
+            <label for="email">Email</label>
+            <input type="email" placeholder="Email" required />
+          </div>
+          <div class="form-input_grid">
+            <label for="password">Password</label>
+            <input type="password" placeholder="Password" required />
+          </div>
           <a href="index.html"><button>Connexion</button></a>
         </form>
-        <div class="button-link">
+        <div class="connexion-social-link">
           <button>
             <i class="fa-brands fa-facebook"></i>Continue With Facebook
           </button>
@@ -61,11 +66,34 @@
             <i class="fa-brands fa-google"></i>Continue With Facebook
           </button>
         </div>
-      </div>
-      <div class="inscription-link">
-        <a href="inscription.html">new user?</a>
-        <a href="#">Forgot your password?</a>
+        <div class="inscription-link">
+          <a href="inscription.html">new user?</a>
+          <a href="#">Forgot your password?</a>
+        </div>
       </div>
     </section>
+    <!-- footer  -->
+    <footer>
+      <div class="footer-p1">
+        <div class="footer-logo">
+          <h3>Arena <span>Connect</span></h3>
+          <p>une platforme dédiée aux passionnés</p>
+          <p>de gaming et d'e-sport,</p>
+        </div>
+        <div class="footer-icons">
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-twitch"></i>
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-discord"></i>
+          <i class="fa-brands fa-x-twitter"></i>
+        </div>
+      </div>
+      <div class="footer-element">
+        <a href="actualités.html"><h3>Actualités</h3></a>
+        <a href="#"><h3>Evénements</h3></a>
+        <a href="#"><h3>Inscription</h3></a>
+        <a href="#"> <h3>Contact</h3></a>
+      </div>
+    </footer>
   </body>
 </html>
