@@ -168,9 +168,12 @@ div.accueil-text{
     
 .actualites-card-a{
 	background: #561391;
+    display: flex;
+    flex-direction: column;
     width: 369.99px;
     height: 513.75px;
     border-radius: 35px;
+    align-items: center;
 }
 .actualites-card-title{
     margin-top: 2rem;
@@ -178,6 +181,10 @@ div.accueil-text{
     height: 51px;
 }
 .actualites-card-p{
+    margin-top: 2rem;
+    width: 80%;
+}
+.actualites-card-button {
     margin-top: 2rem;
 }
 .actualites-card-b{
