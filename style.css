@@ -50,8 +50,51 @@ span{
     color: #1079dc;
     display: block;
 }
+div.menu-burger{
+    position: relative;
+    left:-15px;
+}
+.menu-burger ul{
+    font-size: 12px;
+    position: absolute;
+    top: 25px;
+    left: -9px;
+    background-color: rgba(13, 26, 38, 0.372);
+    padding: 4px;
+    display: none;
+}
+.menu-burger i{
+    display: none;
+}
 a:hover{
     color: #1079dc;
+}
+@media (max-width:768px){
+header{
+    font-size: 13px;
+}
+ul.nav-links{
+  position: relative;
+  left: -20px;
+  top: 5px;
+}
+}
+@media (max-width:600px){
+ul.nav-links{
+    display: none;
+}
+.menu-burger i{
+    display:block;
+}
+header .menu-burger{
+    display:flex;
+    font-size: 25px;
+    position: relative;
+    cursor: pointer;
+}
+.menu-burger ul{
+    display:block;
+}
 }
 /* hero */
 .hero-title .hero-title-span{
@@ -83,12 +126,7 @@ p{
 .accueil-images img{
     width: 180px;
 }
-.inscption-titele h2.inscription-title_color{
-    color: antiquewhite;
-}
-h2.inscription-title_color span{
-    display: block;
-}
+
 .accueil-images{
     border: 2px solid rgb(67, 11, 123);
     width:max-content;
@@ -167,6 +205,7 @@ form .form-input_grid{
     transform: translateY(-9px);
     box-shadow: 0 10px 30px  #2b8cff;
 }
+    
 /* connexion */
 section.connexion{
     place-items: center;
@@ -233,7 +272,13 @@ div.form-connexion:hover{
     transform: translateY(-9px);
     box-shadow: 0 10px 30px  #2b8cff;
 }
+.inscption-titele h2.inscription-title_color{
+    color: antiquewhite;
+}
 /* inscription */
+h2.inscription-title_color span{
+    display: block;
+}
  section.inscrition{
     place-items: center;
     margin-top: 50px;
@@ -290,22 +335,123 @@ div.form-connexion:hover{
 /* footer */
 footer{
     background-color: black;
-     position: relative;
-     top: 280px;
+    position: relative;
+    top: 280px;
 }
 .footer-p1{
-    display: flex;
-    justify-content: space-between;
+   display: grid;
+   grid-template-columns: repeat(2,auto);
+   justify-content: space-between;
     padding: 20px;
 }
 .footer-icons{
     font-size: 30px;
-    display: flex;
-    justify-content: space-between;
     gap: 40px;
 }
 .footer-element{
-    display: flex;
+    display: grid;
+    grid-template-columns:repeat(4,auto);
     justify-content: space-between;
     padding: 20px;
+}
+@media(max-width:1200px){
+.accueil-images img{
+    width: 130px;
+}
+}
+@media (max-width:768px){
+footer{
+    font-size: 12px;
+}
+.footer-icons{
+    font-size: 20px;
+}
+}@media (max-width:768px){
+.hero-title{
+    font-size: 12px;
+}
+.hero-paragraphe{
+    font-size: 14px;
+    margin-left: -40px;
+}
+.accueil-jeux h3{
+    font-size: 16px;
+}
+.accueil-images img{
+    width: 100px;
+}
+div.accueil-button .button1{
+    width: 110px;
+}
+div.accueil-button .button2{
+    width: 110px;
+}
+.accueil-card img{
+    width: 150px;
+}
+.accueil-text-para p,.accueil-discription p{
+    font-size: 12px;
+}
+
+}
+@media (max-width:600px){
+.hero-title{
+    font-size: 10px;
+}
+.hero-paragraphe{
+    font-size: 10px;
+    margin-left: -40px;
+}
+.accueil-jeux h3{
+    font-size: 12px;
+    margin-left: -20px;
+}
+.accueil-images img{
+    width: 60px;
+}
+div.accueil-button .button1{
+    width: 80px;
+}
+div.accueil-button .button2{
+    width: 70px;
+}
+.accueil-card img{
+    width: 100px;
+}
+.accueil-text-para p,.accueil-discription p{
+    font-size: 12px;
+}
+}
+@media (max-width:468px){
+    .accueil-images img{
+    width: 40px;
+}
+.hero-title{
+    font-size: 9px;
+}
+.hero-paragraphe{
+    font-size: 8px;
+}
+.accueil-jeux h3{
+    font-size: 11px;
+    margin-left: -30px;
+}
+.accueil-card img{
+    width: 70px;
+}
+div.accueil-button .button1{
+    width: 60px;
+}
+div.accueil-button .button2{
+    width: 60px;
+}
+.accueil-text-para p,.accueil-discription p{
+    font-size: 9px;
+}
+footer{
+    font-size: 9px;
+}
+.footer-icons{
+    font-size: 15px;
+}
 }
