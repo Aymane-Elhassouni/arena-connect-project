@@ -1,0 +1,458 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
+    color: white;
+    background-color: #1e2131;
+    background-image: linear-gradient(TO right ,#0000005f ,#440C75,#3134cd86);
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+/* header  */
+header{
+    height: 70px;
+    background-color: black;
+    position: sticky;
+    top: 0;
+}
+.logo span{
+    color:#2584DE;
+}
+.nav-links button{
+    width: 68px;
+    height:30px;
+    background-image: linear-gradient(to right , #00BBFF , #4F0099);
+    color: rgba(255, 255, 255, 0.893);
+    border: none;
+    border-radius: 20px;
+    box-shadow: 1px 1px 25px 8px #1079dc;
+}
+nav{
+    display: flex;
+    justify-content: space-between ;
+    align-items: center;
+    padding: 10px;
+
+}
+ul.nav-links{
+    display: flex;
+    justify-content:center;
+    gap: 1.5rem;
+}
+ul li{
+    list-style: none;
+}
+span{
+    color: #1079dc;
+    display: block;
+}
+div.menu-burger{
+    position: relative;
+    left:-15px;
+}
+.menu-burger ul{
+    font-size: 12px;
+    position: absolute;
+    top: 25px;
+    left: -9px;
+    background-color: rgba(13, 26, 38, 0.372);
+    padding: 4px;
+    display: none;
+}
+.menu-burger i{
+    display: none;
+}
+a:hover{
+    color: #1079dc;
+}
+@media (max-width:768px){
+header{
+    font-size: 13px;
+}
+ul.nav-links{
+  position: relative;
+  left: -20px;
+  top: 5px;
+}
+}
+@media (max-width:600px){
+ul.nav-links{
+    display: none;
+}
+.menu-burger i{
+    display:block;
+}
+header .menu-burger{
+    display:flex;
+    font-size: 25px;
+    position: relative;
+    cursor: pointer;
+}
+.menu-burger ul{
+    display:block;
+}
+}
+/* hero */
+.hero-title .hero-title-span{
+    background: linear-gradient(
+    135deg,#208BEE,#A016E4 );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+section.hero{
+    margin-top: 50px;
+    position: relative;
+    left: 35%;
+    width: fit-content;
+}
+p{
+    opacity: 60%;
+}
+
+/* Accueil */
+.accueil-jeux h3{
+    position:relative;
+    top: 40px;
+    width: fit-content;
+    left: 35%;
+    color: #1079dc;
+    
+}
+.accueil-images img{
+    width: 180px;
+}
+
+.accueil-images{
+    border: 2px solid rgb(67, 11, 123);
+    width:max-content;
+    margin-left: 12%;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgb(119, 48, 191);
+}
+
+.accueil-images{
+    display: grid;
+    grid-template-columns: repeat(5,auto);
+    gap: 10px;
+    margin-top: 50px;
+}
+.img:hover{
+     transform: scale(1.1);
+     transition: 0.5s ease;
+}
+
+.accueil-card{
+    background-color: #0000001f;
+    margin-top: 40px;
+    position:relative;
+    top: 100px;
+    left: 25%; 
+    width: 50%;
+    border-radius: 15px;
+    box-shadow: 0px 10px 30px black;
+    padding:2%;
+}
+div.accueil-button{
+    display: flex;
+    justify-content:space-between;
+}
+div.accueil-button .button1{
+    background-image: linear-gradient(to right , #00BBFF , #4F0099);
+   color: white;
+    width: 200px;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+}
+.accueil-button .button2{
+    background-color: rgba(0, 0, 0, 0.116);
+    color: white;
+    border: 2px solid black;
+    width: 200px;
+    height: 40px;
+    border-radius: 20px;
+}
+.accueil-card img{
+    width: 200px;
+    border: none;
+    border-radius: 10px;
+}
+div.accueil-text{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.form-connexion form{
+    display: grid;
+    gap: 10px;
+}
+
+form .form-input_grid{
+    display: grid;
+    grid-template-columns: 4 1fr;
+    justify-items: center;
+}
+.accueil .accueil-discription{
+    margin-top: 50px;
+}
+.accueil-card:hover{
+    transform: translateY(-9px);
+    box-shadow: 0 10px 30px  #2b8cff;
+}
+    
+/* connexion */
+section.connexion{
+    place-items: center;
+    margin-top: 50px;
+    display: grid;
+}
+div.form-connexion{
+    margin-top: 40px;
+    background-color: #1e213130;
+    display: grid;
+    width: 50%;
+    gap: 25px;
+    text-align: center;
+    box-shadow: 0 0 20px  rgba(0,0, 0, 0.6);
+    border-radius:16px;
+}
+h2{
+    color: #2b8cff;
+    font-size: 27px;
+}
+.form-connexion img{
+     width: 100%;
+     border-radius: 16px 16px 0 0;
+}
+.form-connexion form input{
+    width: 60%;
+    padding: 10px;
+    border-radius: 9px;
+    color: white;
+    border: 1px solid black;
+    background-color: #440c754e;
+}
+
+.form-connexion form button{
+    background-image: linear-gradient(to right ,  #2b8cff , #6a3af1);
+    border: none;
+    padding: 10px;
+    width: 60%;   
+    margin-top: 20px; 
+    border-radius: 9px;
+    color: white;
+}
+.connexion-social-link{
+    display: grid;
+    gap: 10px;
+    justify-content: center;
+}
+.connexion-social-link button{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-content: center;
+    justify-items: center;
+    gap: 8px;
+    border: none;
+    padding: 10px;
+    border-radius: 9px;
+}
+.form-connexion .inscription-link{
+    display: grid;
+    grid-template-columns:1fr 1fr ;
+    opacity: 70%;
+}
+div.form-connexion:hover{
+    transform: translateY(-9px);
+    box-shadow: 0 10px 30px  #2b8cff;
+}
+.inscption-titele h2.inscription-title_color{
+    color: antiquewhite;
+}
+/* inscription */
+h2.inscription-title_color span{
+    display: block;
+}
+ section.inscrition{
+    place-items: center;
+    margin-top: 50px;
+    display: grid;
+ }
+ div.card-inscription{
+    margin-top: 40px;
+    padding: 20px;
+    width: 60%;
+    place-items: center;
+    border-radius: 20px;
+    box-shadow:0 10px 30px black;
+ }
+ form.form-inscription{
+    width: 70%;
+    display: grid;
+    grid-template-rows:repeat(7,auto) ;
+    gap: 20px;
+ }
+ input.checkbox{
+    height: 20px;
+ }
+ form div.input-grid{
+    display: grid;
+    gap: 5px;
+ }
+ form div.checkbox{
+    display: grid;
+    grid-template-columns:repeat(2,auto) ;
+    gap: 10px;
+ }
+  form.form-inscription div input{
+    padding: 10px;
+    color: white;
+    width: 100%;
+    background-color: #4f009936;
+    border:1px solid black;
+    border-radius: 8px;
+
+  }
+   form.form-inscription button{
+    background-image: linear-gradient(to right ,  #2b8cff , #6a3af1);
+    color: white;
+    padding: 9px;
+    border: none;
+    border-radius: 9px;
+   }
+   div.card-inscription:hover{
+    transform: translateY(-9px);
+    box-shadow:0 10px 30px  #2b8cff;
+
+   }
+
+/* footer */
+footer{
+    background-color: black;
+    position: relative;
+    top: 280px;
+}
+.footer-p1{
+   display: grid;
+   grid-template-columns: repeat(2,auto);
+   justify-content: space-between;
+    padding: 20px;
+}
+.footer-icons{
+    font-size: 30px;
+    gap: 40px;
+}
+.footer-element{
+    display: grid;
+    grid-template-columns:repeat(4,auto);
+    justify-content: space-between;
+    padding: 20px;
+}
+@media(max-width:1200px){
+.accueil-images img{
+    width: 130px;
+}
+}
+@media (max-width:768px){
+footer{
+    font-size: 12px;
+}
+.footer-icons{
+    font-size: 20px;
+}
+}@media (max-width:768px){
+.hero-title{
+    font-size: 12px;
+}
+.hero-paragraphe{
+    font-size: 14px;
+    margin-left: -40px;
+}
+.accueil-jeux h3{
+    font-size: 16px;
+}
+.accueil-images img{
+    width: 100px;
+}
+div.accueil-button .button1{
+    width: 110px;
+}
+div.accueil-button .button2{
+    width: 110px;
+}
+.accueil-card img{
+    width: 150px;
+}
+.accueil-text-para p,.accueil-discription p{
+    font-size: 12px;
+}
+
+}
+@media (max-width:600px){
+.hero-title{
+    font-size: 10px;
+}
+.hero-paragraphe{
+    font-size: 10px;
+    margin-left: -40px;
+}
+.accueil-jeux h3{
+    font-size: 12px;
+    margin-left: -20px;
+}
+.accueil-images img{
+    width: 60px;
+}
+div.accueil-button .button1{
+    width: 80px;
+}
+div.accueil-button .button2{
+    width: 70px;
+}
+.accueil-card img{
+    width: 100px;
+}
+.accueil-text-para p,.accueil-discription p{
+    font-size: 12px;
+}
+}
+@media (max-width:468px){
+    .accueil-images img{
+    width: 40px;
+}
+.hero-title{
+    font-size: 9px;
+}
+.hero-paragraphe{
+    font-size: 8px;
+}
+.accueil-jeux h3{
+    font-size: 11px;
+    margin-left: -30px;
+}
+.accueil-card img{
+    width: 70px;
+}
+div.accueil-button .button1{
+    width: 60px;
+}
+div.accueil-button .button2{
+    width: 60px;
+}
+.accueil-text-para p,.accueil-discription p{
+    font-size: 9px;
+}
+footer{
+    font-size: 9px;
+}
+.footer-icons{
+    font-size: 15px;
+}
+}
