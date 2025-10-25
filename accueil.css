@@ -69,7 +69,6 @@ div.menu-burger{
 }
 .menu-burger ul:hover{
     height: 125px;
-    
 }
 .menu-burger i{
     display: none;
