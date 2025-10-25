@@ -1,0 +1,559 @@
+* {
+    margin: 0;
+    text-decoration: none;
+}
+
+header {
+    height: 55px;
+    background-color: black;
+    background-color: black;
+}
+
+body {
+    font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
+    color: white;
+    background-color: #1e2131;
+    background-image: linear-gradient(TO right, #0000005f, #440C75, #3134cd86);
+}
+
+.logo span {
+    color: #2584DE;
+}
+
+.nav-links button {
+    width: 68px;
+    height: 30px;
+    background-image: linear-gradient(to right, #00BBFF, #4F0099);
+    color: rgba(255, 255, 255, 0.893);
+    border: none;
+    border-radius: 20px;
+    box-shadow: 1px 1px 25px 8px #1079dc;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+
+}
+
+ul.nav-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+ul li {
+    list-style: none;
+}
+
+span {
+    color: #1079dc;
+}
+@media (max-width:768px){
+header{
+    font-size: 13px;
+}
+ul.nav-links{
+  position: relative;
+  left: -20px;
+  top: 5px;
+}
+}
+@media (max-width:600px){
+ul.nav-links{
+    display: none;
+}
+.menu-burger i{
+    display:block;
+}
+header .menu-burger{
+    display:flex;
+    font-size: 25px;
+    position: relative;
+    cursor: pointer;
+}
+.menu-burger ul{
+    display:block;
+}
+}
+.profile-page {
+    display: grid;
+    grid-template-columns: 5fr 90fr 5fr;
+    width: 100%;
+    grid-template-rows: 50px 270px 300px;
+    row-gap: 50px;
+    /* background-color: #1e2131;
+background-image: linear-gradient(TO right ,#0000005f ,#440C75,#3134cd86); */
+    height: 100%;
+}
+
+
+.profile-card {
+    display: grid;
+    grid-area: 2/2/3/3;
+    height: 270px;
+    grid-template-rows: 50px 65px 65px 50px 75px;
+    grid-template-columns: 10px 130px 100px 450px 450px;
+
+
+
+}
+
+
+.profile-pic {
+    grid-area: 2/2/4/3;
+    background-image: url(imagesA/pic6.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    border-width: 4px;
+    border-style: solid;
+    border-color: white;
+
+
+
+}
+
+
+
+.profile-banner {
+
+    grid-area: 1/1/6/6;
+
+}
+
+.profile-banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+
+}
+
+.profile-under-banner {
+
+    background-color: black;
+    grid-area: 5/1/6/6;
+
+
+}
+
+.profile-followers {
+    color: white;
+
+    grid-area: 5/2/6/3;
+    justify-self: left;
+    align-self: center;
+
+}
+
+.profile-description {
+    color: white;
+    font-size: 25px;
+    grid-area: 5/5/6/6;
+    justify-self: left;
+    align-self: center;
+}
+
+.profile-follows {
+    color: white;
+
+    grid-area: 5/3/6/4;
+    justify-self: left;
+    align-self: center;
+
+}
+
+.profile-section2 {
+    display: grid;
+    grid-area: 3/2/4/3;
+    height: 300px;
+    width: auto;
+    grid-template-columns: 3fr repeat(2, 5fr) 4fr 2fr 5fr 10fr;
+    grid-template-rows: 60fr 50fr 12fr 50fr 15fr 50fr 15fr 50fr 12fr 50fr 12fr;
+}
+
+/* 3fr repeat(2, 6fr) 5fr 5fr 5fr 10fr
+5fr 4fr 1fr 4fr 1fr 4fr 1fr 4fr 1fr 4fr 1fr */
+.profile-jeu-favori {
+    grid-area: 2/2/3/3;
+    color: white;
+    font-weight: bold;
+}
+
+.profile-game {
+    grid-area: 2/3/3/4;
+    color: #6744F1;
+    font-weight: bold;
+    text-align: center;
+}
+
+.profile-rank {
+    grid-area: 1/6/-1/-1;
+    background-image: url(imagesA/Rank.jpg);
+    border-radius: 30px;
+    background-size: cover;
+}
+
+.profile-diamond {
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    grid-area: 1/7/2/8;
+    padding-left: 14px;
+}
+
+.profile-frame1 {
+    background-color: #323136;
+    grid-area: 1/1/-1/5;
+    border-radius: 30px;
+}
+
+.profile-mvp {
+    grid-area: 5/2/6/3;
+    color: white;
+    font-weight: bold;
+}
+
+
+.profile-wins {
+    grid-area: 9/2/10/3;
+    color: white;
+    font-weight: bold;
+}
+
+.Profile-flexdiv {
+    display: flex;
+    position: relative;
+    grid-area: 4/3/7/4;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-mvp-bar {
+    border-radius: 50%;
+    height: 100%;
+    aspect-ratio: 1/1;
+    background: conic-gradient(white 0% 58%, #2245C2 58% 100%);
+
+}
+
+.profile-mvp-circle {
+    z-index: 1;
+    position: absolute;
+    border-radius: 50%;
+    height: 70%;
+    aspect-ratio: 1/1;
+    background-color: #323136;
+}
+
+
+
+
+.profile-name {
+    color: white;
+    font-size: 30px;
+    grid-area: 2/3/3/4;
+    justify-self: left;
+    align-self: center;
+}
+
+.profile-madeIn {
+    color: white;
+    font-size: 20px;
+    grid-area: 3/3/4/4;
+    justify-self: left;
+    align-self: center;
+}
+
+.profile-flexdiv2 {
+    display: flex;
+    position: relative;
+    grid-area: 8/3/11/4;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-win-bar {
+    border-radius: 50%;
+    height: 100%;
+    aspect-ratio: 1/1;
+
+    background: conic-gradient(white 0% 35%, #9222C2 35% 100%);
+
+}
+
+.profile-win-circle {
+    z-index: 1;
+    position: absolute;
+    border-radius: 50%;
+    height: 70%;
+    aspect-ratio: 1/1;
+    background-color: #323136;
+}
+
+.profile-percentage {
+    position: absolute;
+    z-index: 2;
+    color: white;
+}
+
+
+.spaceUp {
+    margin-top: 30px;
+}
+
+
+
+/* Settings */
+.settings-grid1 {
+    display: grid;
+    grid-template-columns: 15fr 5fr 20fr 20fr 15fr 5fr 15fr;
+    grid-template-rows: 30% 30% 30% 10%;
+    height: 150px;
+}
+
+.settings-account {
+    color: white;
+    grid-area: 1/1/2/3;
+
+}
+
+.settings-profile-pic {
+    background: linear-gradient(#63E07C, #0CC0AB);
+    grid-area: 2/2/4/-2;
+    border-radius: 10px;
+}
+
+.settings-modify1-background {
+    background-color: #9144C9;
+    border-radius: 10px;
+    grid-area: 3/3/4/4;
+    height: 80%;
+    align-self: center;
+}
+
+.settings-modify1 {
+    grid-area: 3/3/4/4;
+    text-align: center;
+    align-self: center;
+
+}
+
+.settings-profile-pic-text {
+    color: #2C2CCC;
+    font-size: 18px;
+    grid-area: 2/3/3/4;
+    font-weight: bold;
+    align-self: center;
+}
+
+.settings-avatar {
+    display: flex;
+    
+    grid-area: 2/5/4/6;
+    background-image: url(imagesA/pic6.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-style: solid;
+    border-width: 5px;
+    border-color: white;
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+
+}
+
+.settings-grid2 {
+    display: grid;
+    grid-template-columns: 5fr 20fr 15fr 15fr 5fr;
+    grid-template-rows: repeat(8, 40px);
+    row-gap: 10px;
+    height: 100;
+    width: 80%;
+    
+}
+
+.settings-name-background {
+    background: linear-gradient(#63E07C, #0CC0AB);
+    grid-area: 1/1/3/-1;
+    border-radius: 10px;
+}
+
+.settings-name-text {
+    color: #2C2CCC;
+    font-size: 18px;
+    grid-area: 1/2/2/3;
+    font-weight: bold;
+    align-self: center;
+}
+
+.settings-modify2-background {
+    background-color: #9144C9;
+    border-radius: 10px;
+    grid-area: 1/4/3/5;
+    height: 40%;
+    align-self: center;
+}
+
+.settings-modify2 {
+    grid-area: 1/4/3/5;
+    text-align: center;
+    align-self: center;
+
+}
+
+.settings-input-name {
+    grid-area: 2/2/3/3;
+    background-color: rgb(209, 209, 209);
+    border-radius: 9px;
+}
+
+
+
+.settings-email-background {
+    background: linear-gradient(#63E07C, #0CC0AB);
+    grid-area: 3/1/5/-1;
+    border-radius: 10px;
+}
+
+.settings-email-text {
+    color: #2C2CCC;
+    font-size: 18px;
+    grid-area: 3/2/4/3;
+    font-weight: bold;
+    align-self: center;
+}
+
+.settings-modify3-background {
+    background-color: #9144C9;
+    border-radius: 10px;
+    grid-area: 3/4/5/5;
+    height: 40%;
+    align-self: center;
+}
+
+.settings-modify3 {
+    grid-area: 3/4/5/5;
+    text-align: center;
+    align-self: center;
+
+}
+
+.settings-input-email {
+    grid-area: 4/2/5/3;
+    background-color: rgb(209, 209, 209);
+    border-radius: 9px;
+}
+
+
+.settings-password-background {
+    background: linear-gradient(#63E07C, #0CC0AB);
+    grid-area: 5/1/7/-1;
+    border-radius: 10px;
+}
+
+.settings-password-text {
+    color: #2C2CCC;
+    font-size: 18px;
+    grid-area: 5/2/6/3;
+    font-weight: bold;
+    align-self: center;
+}
+
+.settings-modify4-background {
+    background-color: #9144C9;
+    border-radius: 10px;
+    grid-area: 5/4/7/5;
+    height: 40%;
+    align-self: center;
+}
+
+.settings-modify4 {
+    grid-area: 5/4/7/5;
+    text-align: center;
+    align-self: center;
+
+}
+
+.settings-input-password {
+    grid-area: 6/2/7/3;
+    background-color: rgb(209, 209, 209);
+    border-radius: 9px;
+}
+
+.settings-number-background {
+    background: linear-gradient(
+        to top,
+        #63E07C,
+         #0CC0AB);
+    grid-area: 7/1/9/-1;
+    border-radius: 10px;
+}
+
+.settings-number-text {
+    color: #2C2CCC;
+    font-size: 18px;
+    grid-area: 7/2/8/3;
+    font-weight: bold;
+    align-self: center;
+}
+
+.settings-modify5-background {
+    background-color: #9144C9;
+    border-radius: 10px;
+    grid-area: 7/4/9/5;
+    height: 40%;
+    align-self: center;
+}
+
+.settings-modify5 {
+    grid-area: 7/4/9/5;
+    text-align: center;
+    align-self: center;
+
+}
+
+.settings-input-number {
+    grid-area: 8/2/9/3;
+    background-color: rgb(209, 209, 209);
+    border-radius: 9px;
+}
+.flexcenter{
+    display: flex;
+    justify-content: center;
+}
+.settings-accessibility{
+    color: white;
+    font-size: xx-large;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* footer */
+footer {
+    background-color: black;
+    position: relative;
+    top: 280px;
+    color: white;
+}
+
+.footer-p1 {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.footer-icons {
+    font-size: 30px;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.footer-element {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}

@@ -19,6 +19,33 @@ header{
     background-color: black;
     background-color: black;
 }
+@media (max-width:768px){
+header{
+    font-size: 13px;
+}
+ul.nav-links{
+  position: relative;
+  left: -20px;
+  top: 5px;
+}
+}
+@media (max-width:600px){
+ul.nav-links{
+    display: none;
+}
+.menu-burger i{
+    display:block;
+}
+header .menu-burger{
+    display:flex;
+    font-size: 25px;
+    position: relative;
+    cursor: pointer;
+}
+.menu-burger ul{
+    display:block;
+}
+}
 .logo span{
     color:#2584DE;
 }
