@@ -53,16 +53,23 @@ span{
 }
 div.menu-burger{
     position: relative;
-    left:-15px;
+    left:-20px;
 }
 .menu-burger ul{
     font-size: 12px;
     position: absolute;
     top: 25px;
-    left: -9px;
-    background-color: rgba(13, 26, 38, 0.372);
+    left: -45px;
+    background-color: rgba(13, 26, 38, 0.146);
     padding: 4px;
     display: none;
+    height: 5px;
+    overflow: hidden;
+
+}
+.menu-burger ul:hover{
+    height: 125px;
+    
 }
 .menu-burger i{
     display: none;
