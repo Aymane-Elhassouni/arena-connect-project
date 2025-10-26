@@ -1,12 +1,14 @@
 * {
     margin: 0;
-    text-decoration: none;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-header {
-    height: 55px;
+header{
+    height: 70px;
     background-color: black;
-    background-color: black;
+    position: sticky;
+    top: 0;
 }
 
 body {
@@ -47,9 +49,63 @@ ul.nav-links {
 ul li {
     list-style: none;
 }
-
+a{
+    text-decoration: none;
+}
 span {
     color: #1079dc;
+}
+div.menu-burger{
+    position: relative;
+    left:-20px;
+}
+.menu-burger ul{
+    font-size: 12px;
+    position: absolute;
+    top: 25px;
+    left: -45px;
+    background-color: rgba(13, 26, 38, 0.146);
+    padding: 4px;
+    display: none;
+    height: 5px;
+    overflow: hidden;
+
+}
+.menu-burger ul:hover{
+    height: 125px;
+}
+.menu-burger i{
+    display: none;
+}
+a:hover{
+    color: #1079dc;
+}
+@media (max-width:768px){
+header{
+    font-size: 13px;
+}
+ul.nav-links{
+  position: relative;
+  left: -20px;
+  top: 5px;
+}
+}
+@media (max-width:600px){
+ul.nav-links{
+    display: none;
+}
+.menu-burger i{
+    display:block;
+}
+header .menu-burger{
+    display:flex;
+    font-size: 25px;
+    position: relative;
+    cursor: pointer;
+}
+.menu-burger ul{
+    display:block;
+}
 }
 @media (max-width:768px){
 header{
@@ -115,7 +171,9 @@ background-image: linear-gradient(TO right ,#0000005f ,#440C75,#3134cd86); */
 
 
 }
-
+a{
+    color: white;
+}
 
 
 .profile-banner {
@@ -475,6 +533,9 @@ background-image: linear-gradient(TO right ,#0000005f ,#440C75,#3134cd86); */
     text-align: center;
     align-self: center;
 
+}
+input{
+ padding: 10px;
 }
 
 .settings-input-password {
