@@ -29,7 +29,9 @@ body {
     border-radius: 20px;
     box-shadow: 1px 1px 25px 8px #1079dc;
 }
-
+header a {
+    color: white;
+}
 nav {
     display: flex;
     justify-content: space-between;
