@@ -278,23 +278,23 @@ div.accueil-text{
 }
 /* footer */
 footer{
-    background-color:#000000;
-     position: relative;
-     top: 280px;
+    background-color: black;
+    position: relative;
+    top: 280px;
 }
 .footer-p1{
-    display: flex;
-    justify-content: space-between;
+   display: grid;
+   grid-template-columns: repeat(2,auto);
+   justify-content: space-between;
     padding: 20px;
 }
 .footer-icons{
     font-size: 30px;
-    display: flex;
-    justify-content: space-between;
     gap: 40px;
 }
 .footer-element{
-    display: flex;
+    display: grid;
+    grid-template-columns:repeat(4,auto);
     justify-content: space-between;
     padding: 20px;
 }
