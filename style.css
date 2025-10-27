@@ -75,6 +75,8 @@ div.menu-burger{
 }
 a:hover{
     color: #1079dc;
+    background-color: black;
+    background-color: black;
 }
 @media (max-width:768px){
 header{
