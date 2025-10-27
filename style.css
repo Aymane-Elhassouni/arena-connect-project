@@ -75,6 +75,8 @@ div.menu-burger{
 }
 a:hover{
     color: #1079dc;
+    background-color: black;
+    background-color: black;
 }
 @media (max-width:768px){
 header{
@@ -119,8 +121,55 @@ div.paragraphe{
 div.paragraphe p:first-child{
     margin-left: 100px;
 }
+/* Accueil */
+
+section.accueil{
+    background-color: #0000001f;
+    margin-top: 40px;
+    position:relative;
+    top: 200px;
+    left: 25%; 
+    width: 50%;
+    border-radius: 15px;
+    box-shadow: 0px 10px 30px black;
+    padding:2%;
+}
+div.accueil-button{
+    display: flex;
+    justify-content:space-between;
+}
+div.accueil-button .button1{
+    background-image: linear-gradient(to right , #00BBFF , #4F0099);
+   color: white;
+    width: 200px;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+}
+.accueil-button .button2{
+    background-color: rgba(0, 0, 0, 0.116);
+    color: white;
+    border: 2px solid black;
+    width: 200px;
+    height: 40px;
+    border-radius: 20px;
+}
+section img{
+    width: 200px;
+    border: none;
+    border-radius: 10px;
+}
+div.accueil-text{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
 
 /* Actualétes */
+.actualites-tilte{
+    margin: 2rem;
+    text-align: center;
+}
 .actualites-item {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -206,7 +255,27 @@ div.paragraphe p:first-child{
     width: 100%;
 
 }
-
+@media screen and (max-width: 800px) {
+    .actualites-item{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .actuatlites-card-d{
+        width: 369.99px;
+        height: 513.75px;
+    }
+    .actualites-card-d-image img{
+        width: 369.99px;
+        height: 181px;
+    }
+    .actualites-card-d-btn{
+    margin-top: 2rem;
+    padding-left: 12px;
+    width: 100%;
+    }
+    
+}
 /* footer */
 footer{
     background-color: black;
@@ -229,6 +298,9 @@ footer{
     justify-content: space-between;
     padding: 20px;
 }
+
+
+
 @media(max-width:1200px){
 .accueil-images img{
     width: 130px;
