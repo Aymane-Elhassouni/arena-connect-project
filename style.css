@@ -7,7 +7,7 @@ body{
     font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
     color: white;
     background-color: #1e2131;
-     background-image: linear-gradient(TO right ,#0000005f ,#440C75,#3134cd86);
+    background-image: linear-gradient(TO right ,#0000005f ,#440C75,#3134cd86);
 }
 a{
     color: white;
@@ -15,7 +15,7 @@ a{
 }
 /* header  */
 header{
-    height: 70px;
+    height: 55px;
     background-color: black;
     position: sticky;
     top: 0;
@@ -53,16 +53,22 @@ span{
 }
 div.menu-burger{
     position: relative;
-    left:-15px;
+    left:-20px;
 }
 .menu-burger ul{
     font-size: 12px;
     position: absolute;
     top: 25px;
-    left: -9px;
-    background-color: rgba(13, 26, 38, 0.372);
+    left: -45px;
+    background-color: rgba(13, 26, 38, 0.146);
     padding: 4px;
     display: none;
+    height: 5px;
+    overflow: hidden;
+
+}
+.menu-burger ul:hover{
+    height: 125px;
 }
 .menu-burger i{
     display: none;
@@ -70,35 +76,32 @@ div.menu-burger{
 a:hover{
     color: #1079dc;
 }
-.logo span{
-    color:#2584DE;
-}
-.nav-links button{
-    width: 68px;
-    height:30px;
-    background-image: linear-gradient(to right , #00BBFF , #4F0099);
-    color: rgba(255, 255, 255, 0.893);
-    border: none;
-    border-radius: 20px;
-    box-shadow: 1px 1px 25px 8px #1079dc;
-}
-nav{
-    display: flex;
-    justify-content: space-between ;
-    align-items: center;
-    padding: 10px;
-
+@media (max-width:768px){
+header{
+    font-size: 13px;
 }
 ul.nav-links{
-    display: flex;
-    justify-content:center;
-    gap: 1rem;
+  position: relative;
+  left: -20px;
+  top: 5px;
 }
-ul li{
-    list-style: none;
 }
-span{
-    color: #1079dc;
+@media (max-width:600px){
+ul.nav-links{
+    display: none;
+}
+.menu-burger i{
+    display:block;
+}
+header .menu-burger{
+    display:flex;
+    font-size: 25px;
+    position: relative;
+    cursor: pointer;
+}
+.menu-burger ul{
+    display:block;
+}
 }
 /* hero */
 section.hero{
