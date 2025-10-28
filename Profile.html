@@ -2,39 +2,29 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Arena- Plateforme E-Sport pour tournois,Arena-connect, équipes et actualités gaming compétitif"
-    />
-    <meta
-      name="keywords"
-      content="esport, gaming, tournois, compétition, équipes,cs2,Valorant"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <title>Arena-connect</title>
-    <link rel="stylesheet" href="mods.css">
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Arena- Plateforme E-Sport pour tournois,Arena-connect, équipes et actualités gaming compétitif" />
+  <meta name="keywords" content="esport, gaming, tournois, compétition, équipes,cs2,Valorant" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Arena-connect</title>
+  <link rel="stylesheet" href="mods.css">
 </head>
 
 <body>
   <header>
-      <nav>
-        <div class="logo">
-          <h3>Arena <span>Connect</span></h3>
-        </div>
-        <div class="menu-burger">
-         <i class="fa-solid fa-bars"></i>
+    <nav>
+      <div class="logo">
+        <h3>Arena <span>Connect</span></h3>
+      </div>
+      <div class="menu-burger">
+        <i class="fa-solid fa-bars"></i>
         <ul class="nav-links-menu-burger">
           <li><a href="index.html">Accueil</a></li>
-          <li><a href="Profile.html">Profil</a></li>
+          <li><a href="#Profile">Profile</a></li>
           <li><a href="actualités.html">Actualités</a></li>
           <li>
             <a href="connexion.html">Connexion</a>
@@ -44,7 +34,7 @@
         </div>
         <ul class="nav-links">
           <li><a href="index.html">Accueil</a></li>
-          <li><a href="Profile.html">Profil</a></li>
+          <li><a href="#Profile">Profile</a></li>
           <li><a href="actualités.html">Actualités</a></li>
           <li>
             <a href="connexion.html"><button>Connexion</button></a>
@@ -57,7 +47,7 @@
     </header>
 
 <!-- profile -->
-    <div class="profile-page">
+    <div class="profile-page" id="profile">
         <section class="profile-card">
             <div class="profile-banner">
                 <img src="imagesA/banner3.png" alt="blue">
@@ -100,31 +90,73 @@
         </section>
 
 
-    </div>
-     <footer>
-       <div class="footer-p1"> 
-        <div class="footer-logo">
-            <h3>Arena <span>Connect</span></h3>
-            <p>une platforme dédiée aux passionnés</p>
-            <p>de gaming et d'e-sport,</p>
-        </div>
-        <div class="footer-icons">
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-twitch"></i>
-            <i class="fa-brands fa-facebook"></i>
-            <i class="fa-brands fa-discord"></i>
-            <i class="fa-brands fa-x-twitter"></i>
-        </div>
-     </div>
-     <div class="footer-element">
-        <h3>Actualités</h3>
-        <h3>Evénements</h3>
-        <h3>Inscription</h3>
-        <h3>Contact</h3>
-     </div>
+  <div class="profile-page">
+    <section class="profile-card">
+      <div class="profile-banner">
 
-     </footer>
-  
+      </div>
+
+      <div class="profile-pic"></div>
+      <div class="profile-under-banner"> </div>
+      <p class="profile-followers">followers: 14</p>
+      <p class="profile-follows">follows: 272</p>
+      <p class="profile-description"><strong>Description</strong></p>
+      <p class="profile-name"> Ammar</p>
+      <p class="profile-madeIn">made in 05/03/2018 </p>
+
+    </section>
+    <section class="profile-section2 spaceUp">
+      <div class="profile-frame1"></div>
+      <div class="profile-frame2"></div>
+      <p class="profile-jeu-favori"> Jeu Favori:</p>
+      <p class="profile-game">Valorant</p>
+      <div class="profile-rank-background"></div>
+      <div class="profile-rank">
+        <!-- <img src="imagesA/Rank.jpg" class="profile-rank" alt=""> -->
+      </div>
+      <p class="profile-diamond">Diamond I</p>
+
+      <p class="profile-mvp">mvp ratio :</p>
+      <p class="profile-wins">Win ratio:</p>
+      <div class="Profile-flexdiv">
+        <div class="profile-mvp-bar"></div>
+        <div class="profile-mvp-circle"></div>
+        <p class="profile-percentage">42%</p>
+      </div>
+      <div class="profile-flexdiv2">
+        <div class="profile-win-bar"></div>
+        <div class="profile-win-circle"></div>
+        <p class="profile-percentage">65%</p>
+      </div>
+
+    </section>
+
+
+  </div>
+  <footer>
+    <div class="footer-p1">
+      <div class="footer-logo">
+        <h3>Arena <span>Connect</span></h3>
+        <p>une platforme dédiée aux passionnés</p>
+        <p>de gaming et d'e-sport,</p>
+      </div>
+      <div class="footer-icons">
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-twitch"></i>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-discord"></i>
+        <i class="fa-brands fa-x-twitter"></i>
+      </div>
+    </div>
+    <div class="footer-element">
+      <h3>Actualités</h3>
+      <h3>Evénements</h3>
+      <h3>Inscription</h3>
+      <h3>Contact</h3>
+    </div>
+
+  </footer>
+
 
 </body>
 
